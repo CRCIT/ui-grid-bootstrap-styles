@@ -1,0 +1,15 @@
+{
+  "name": "ui-grid-bootstrap-styles",
+  "version": "1.0.0",
+  "description": "Plugin for applying bootstrap styles to ui-grid",
+  "license": "Apache",
+  "keywords": [
+    "ui-grid",
+    "bootstrap",
+    "plugin"
+  ],
+  "main": ["./ui-grid-bootstrap-styles.js", "./ui-grid-bootstrap-styles.scss"],
+  "ignore": [],
+  "dependencies": {
+  }
+}

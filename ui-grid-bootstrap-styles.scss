@@ -1,0 +1,108 @@
+[ui-grid-bootstrap-styles].ui-grid {
+  margin-top: $form-group-margin-bottom;
+  border: none!important;
+  background-color:$table-bg;
+  border-collapse:collapse!important;
+  border-color: $table-border-color;
+  font-size: 13px;
+}
+
+[ui-grid-bootstrap-styles] .ui-grid-row {
+  height: auto !important;
+  border-color: inherit;
+  border-bottom: 1px solid $table-border-color !important;
+  > div {
+    display: table-row;
+  }
+  .ui-grid-cell {
+    display: table-cell;
+    float: none;
+  //  vertical-align: middle;
+    height: auto !important;
+    border:none!important;
+    padding: $table-cell-padding!important;
+    line-height: 1.846;
+    vertical-align: top;
+  }
+}
+[ui-grid-bootstrap-styles] .ui-grid-row:nth-child(odd):hover .ui-grid-cell{
+  background-color: $table-bg-hover!important;
+}
+[ui-grid-bootstrap-styles] .ui-grid-row:nth-child(odd)  {
+  background-color: $table-bg-active;
+}
+[ui-grid-bootstrap-styles] .ui-grid-row:nth-child(even)  {
+  background-color: $table-bg-accent;
+}
+[ui-grid-bootstrap-styles] .ui-grid-header{
+  vertical-align: bottom;
+  border-bottom: 2px solid #dddddd;
+
+}
+
+[ui-grid-bootstrap-styles] .ui-grid-header-cell{
+  background-color: #FFFFFF!important;
+  border-right: none!important;
+  padding: $table-cell-padding!important;
+}
+//Pagination
+[ui-grid-bootstrap-styles] .ui-grid-pager-panel button{
+  color:white!important;
+  background-color:$brand-primary;
+  border:2px solid $brand-primary;
+}
+
+
+[ui-grid-bootstrap-styles] .ui-grid-pager-control .first-triangle{
+  border-color: transparent white transparent transparent!important;
+}
+
+[ui-grid-bootstrap-styles] .ui-grid-pager-control .last-triangle{
+  border-color: transparent transparent transparent white!important;
+}
+
+[ui-grid-bootstrap-styles] .ui-grid-pager-panel{
+  float:right;
+}
+[ui-grid-bootstrap-styles] .ui-grid-pager-control .last-bar {
+  border-left: 2px solid white!important;
+}
+
+[ui-grid-bootstrap-styles] .ui-grid-pager-control .first-bar {
+  border-left: 2px solid white!important;
+}
+
+[ui-grid-bootstrap-styles] .ui-grid-pager-panel input{
+  text-align: center;
+  padding-left: 3px;
+}
+
+[ui-grid-bootstrap-styles] .ui-grid-pager-panel .ui-grid-pager-row-count-label{
+  display: none;
+}
+
+[ui-grid-bootstrap-styles] .ui-grid-pager-panel span{
+  display: none;
+}
+
+[ui-grid-bootstrap-styles] .ui-grid-viewport .ui-grid-row button.btn {
+  margin-right: 5px;
+}
+
+[ui-grid-bootstrap-styles] .ui-grid-menu-button {
+  border: none!important;
+  background-color: $table-bg;
+  right: -5px;
+}
+
+[ui-grid-bootstrap-styles] .ui-grid-top-panel {
+  background: $table-bg;
+}
+
+/** Resize Columns **/
+[ui-grid-bootstrap-styles],[ui-grid-resize-columns] .ui-grid-header-cell:hover {
+  border-right: 1px solid $table-border-color !important;
+}
+[ui-grid-bootstrap-styles],[ui-grid-resize-columns] .ui-grid-header-cell:last-child .ui-grid-column-resizer.right {
+  border-right: none !important;
+}
